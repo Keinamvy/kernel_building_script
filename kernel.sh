@@ -46,89 +46,24 @@ rm -rf error.log
 #
 
 # Devices
-if [ "$DEVICE_TYPE" == courbet  ];
+if [ "$DEVICE_TYPE" == sweet2  ];
 then
-DEVICE="XIAOMI 11 LITE (OSS)"
-KERNEL_NAME="SLEEPY_KERNEL-OSS"
-CODENAME="COURBET"
-
-DEFCONFIG_COMMON="vendor/sdmsteppe-perf_defconfig"
-DEFCONFIG_DEVICE="vendor/courbet.config"
-
-AnyKernel="https://github.com/itsshashanksp/AnyKernel3.git"
-AnyKernelbranch="courbet"
-fi
-
-if [ "$DEVICE_TYPE" == davinci  ];
-then
-DEVICE="REDMI K20 (OSS)"
-KERNEL_NAME="SLEEPY_KERNEL-OSS"
-CODENAME="DAVINCI"
-
-DEFCONFIG_COMMON="vendor/sdmsteppe-perf_defconfig"
-DEFCONFIG_DEVICE="vendor/davinci.config"
-
-AnyKernel="https://github.com/itsshashanksp/AnyKernel3.git"
-AnyKernelbranch="davinci"
-fi
-
-if [ "$DEVICE_TYPE" == phoenix  ];
-then
-DEVICE="REDMI K30 & POCO X2 (OSS)"
-KERNEL_NAME="SLEEPY_KERNEL-OSS"
-CODENAME="PHOENIX"
-
-DEFCONFIG_COMMON="vendor/sdmsteppe-perf_defconfig"
-DEFCONFIG_DEVICE="vendor/phoenix.config"
-
-AnyKernel="https://github.com/itsshashanksp/AnyKernel3.git"
-AnyKernelbranch="phoenix"
-fi
-
-if [ "$DEVICE_TYPE" == sweet  ];
-then
-DEVICE="REDMI NOTE 10 PRO (OSS)"
-KERNEL_NAME="SLEEPY_KERNEL-OSS"
-CODENAME="SWEET"
-
-DEFCONFIG_COMMON="vendor/sdmsteppe-perf_defconfig"
-DEFCONFIG_DEVICE="vendor/sweet.config"
-
-AnyKernel="https://github.com/itsshashanksp/AnyKernel3.git"
-AnyKernelbranch="master"
-fi
-
-if [ "$DEVICE_TYPE" == sweetk6a  ];
-then
-DEVICE="REDMI NOTE 12 PRO 4G (OSS)"
-KERNEL_NAME="SLEEPY_KERNEL-OSS"
+DEVICE="REDMI NOTE 12 PRO 4G"
+KERNEL_NAME="POSITRON_KERNEL"
 CODENAME="SWEET-K6A"
 
 DEFCONFIG_COMMON="vendor/sdmsteppe-perf_defconfig"
-DEFCONFIG_DEVICE="vendor/sweetk6a.config"
+DEFCONFIG_DEVICE="vendor/sweet2.config"
 
-AnyKernel="https://github.com/itsshashanksp/AnyKernel3.git"
-AnyKernelbranch="sweetk6a"
-fi
-
-if [ "$DEVICE_TYPE" == violet  ];
-then
-DEVICE="REDMI NOTE 7 PRO (OSS)"
-KERNEL_NAME="SLEEPY_KERNEL-OSS"
-CODENAME="violet"
-
-DEFCONFIG_COMMON="vendor/sdmsteppe-perf_defconfig"
-DEFCONFIG_DEVICE="vendor/violet.config"
-
-AnyKernel="https://github.com/itsshashanksp/AnyKernel3.git"
-AnyKernelbranch="violet"
+AnyKernel="https://github.com/Keinamvy/AnyKernel3.git"
+AnyKernelbranch="positron"
 fi
 
 # Kernel build release tag
 KRNL_REL_TAG="$KERNEL_TAG"
 
-HOSST="sleeping-bag"
-USEER="itsshashanksp"
+HOSST="positron"
+USEER="Keinamvy"
 
 # setup telegram env
 export BOT_MSG_URL="https://api.telegram.org/bot$API_BOT/sendMessage"
