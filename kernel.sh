@@ -1,4 +1,3 @@
-
 #!/bin/bash
 #
 # Script For Building Android arm64 Kernel
