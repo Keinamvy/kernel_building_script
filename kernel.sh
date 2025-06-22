@@ -48,11 +48,11 @@ rm -rf error.log
 if [ "$DEVICE_TYPE" == sweet2  ];
 then
 DEVICE="REDMI NOTE 12 PRO 4G"
-KERNEL_NAME="Nightmare"
+KERNEL_NAME="Positron"
 CODENAME="Sweet_k6a"
 
 DEFCONFIG_COMMON="vendor/sdmsteppe-perf_defconfig"
-DEFCONFIG_DEVICE="vendor/sweetk6a.config"
+DEFCONFIG_DEVICE="vendor/sweet2.config"
 
 AnyKernel="https://github.com/Keinamvy/AnyKernel3.git"
 AnyKernelbranch="nightmare"
