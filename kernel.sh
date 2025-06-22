@@ -136,10 +136,6 @@ export KBUILD_BUILD_USER="$USEER"
 
 mkdir -p out
 
-curl -LSs "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/refs/heads/next/kernel/setup.sh" | bash -s next-susfs
-git apply KernelSU-hook.patch
-sed -i 's/CONFIG_KSU=n/CONFIG_KSU=y/g' arch/arm64/configs/vendor/sdmsteppe-perf_defconfig
-
 make clean && make mrproper
 make "$DEFCONFIG_COMMON" O=out
 make "$DEFCONFIG_DEVICE" O=out
